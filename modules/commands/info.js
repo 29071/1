@@ -68,19 +68,16 @@ module.exports.run = async({api,event,args}) => {
     var gender = sex == 2 ? "Nam" : sex == 1 ? "Nữ" : "Trần Đức Bo";
       var callback = () => api.sendMessage(
   {body:`梁Admin Bot梁\n
-👀 Tên: ${name} ( Jutsu )
-❎ Tuổi: 19
-👤 😶 Giới tính: ${gender}
-💫 Chiều cao cân nặng: 1m78 51 kg
+👀 Tên: Trần Trọng Mạnh
+❎ Tuổi: 17
+👤 😶 Giới tính: Nam
+💫 Chiều cao cân nặng: 1m65 45 kg
 💘 Mối quan hệ: Độc thân
-😎 Quê quán: Vinh
-👫 Gu: Dú to là được :))
-🌸 Tính cách: Bên ngoài lạnh lùng boiz kiểu Hàn Quốc bên trong ít nói
-🌐 Facebook: ${url}
-🐧 Uid: ${100005303558824}
-❄️ Kết bạn bot: ${b}
-🌀 Sở thích: Chơi game, xem phim anime blabla, ăn, ngủ
-👉 Contact: Https://NguyenHoangAnhProCoder.github.io/Profile`,
+😎 Quê quán: Nghệ An 
+👫 Gu: Thích mình là được :<
+🌐 Facebook: https://www.facebook.com/ttm130
+🌀 Sở thích: Chơi game, nghe nhạc, học lập trình
+👉 Contact: trantrongmanh2004@gmail.com`,
     attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
       return request(
